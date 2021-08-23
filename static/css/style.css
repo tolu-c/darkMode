@@ -11,73 +11,144 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  /* max-width: 114rem; */
 }
 
-header {
+.container {
+  width: 60%;
+  margin: 7.5rem auto;
+  border: 1px solid #eee;
+  /* padding: 1.5rem; */
+}
+
+.darkmode__box {
   width: 100%;
-  height: 10rem;
-  background-color: red;
-  padding: 0 10px;
-}
-
-nav {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 3.6rem;
-  font-weight: 800;
-}
-
-ul {
-  list-style: none;
+  height: 7.5rem;
   text-align: right;
+  padding: 2rem 1.5rem;
 }
-.nav__list {
+
+.icon-box {
   display: inline-block;
+  height: 3.2rem;
+  width: auto;
 }
 
-.nav__list:not(:last-child) {
-  margin-right: 5rem;
+.icon-tabler-sun,
+.icon-tabler-moon {
+  height: 100%;
+  width: 100%;
 }
 
-.nav__link {
-  text-decoration: none;
+.icon-tabler-sun {
+  stroke: yellow;
+  stroke-width: 2;
+}
+
+.switch-box {
+  width: 8rem;
+  height: 3rem;
+  background-color: #78909c;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: right;
+  margin: 0 1rem;
+}
+
+.switch-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #263238;
+}
+
+.right {
+  margin-left: 5rem;
+}
+
+.card {
+  width: 90%;
+  margin: 3rem auto;
+  height: 50rem;
+  background-image: url("/static/images//bg-min.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card__glass {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 80%;
+  height: 70%;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: relative;
+  padding: 2.5rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #212121;
+}
+
+.text {
   font-size: 1.6rem;
-  color: black;
-  transition: all 0.3s;
-  /* padding: 2rem 4rem; */
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
 }
 
-.active {
-  padding-bottom: 0.1rem;
-  border-bottom: 2px solid white;
-  color: white;
-  /* text-decoration: underline; */
+.card__form {
+  margin-top: 1rem;
 }
 
-.nav__link:hover {
-  color: white;
-  padding-bottom: 0.1rem;
-  border-bottom: 2px solid white;
-}
-.mother-container {
-  width: 70px;
-  border-radius: 50px;
-  background-color: rgb(128, 123, 123);
-  display: inline-block;
-  height: 2.5rem;
-  padding: .2rem .2rem;
+.card__label {
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
 }
 
-.toggle-btn{
-    width: 2rem;
-    height: 2rem;
-    background-color: rgb(17, 16, 16);
-    border-radius: 50%;
+.card__label ~ svg {
+  height: 2rem;
+  width: auto;
+  position: absolute;
+  top: 3.5rem;
+  left: .5rem;
+  stroke-width: 1.5;
+}
+
+.row {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.card__input {
+    width: 75%;
+    height: 3.5rem;
+    padding-left: 3rem;
+    border: none;
+    border: .5px solid #888;
+    border-radius: 5px;
+}
+
+.card__input:focus {
+    outline: none;
+}
+
+.card__input:focus:invalid {
+    border-bottom: 1px solid red;
+}
+
+.card__input:focus:valid {
+    border-bottom: 1px solid green;
+}
+
+.card__input::-webkit-input-placeholder {
+    color: #181818;
 }
 

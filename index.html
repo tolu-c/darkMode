@@ -17,20 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script src='/static/js/index.js' defer></script>
+    <script src="/static/js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <span class="logo">darkMode</span>
-        <ul>
-          <li class="nav__list">
-            <a href="#" class="nav__link active">Home</a>
-          </li>
-          <li class="nav__list"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-        <div class="contrast">
+    <div class="container">
+      <div class="darkmode__box">
+        <div class="icon-box icon-box-sun">
           <svg
             class="icon icon-tabler icon-tabler-sun"
             width="24"
@@ -48,11 +40,13 @@
               d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
             />
           </svg>
+        </div>
 
-          <div class="mother-container">
-            <div class="toggle-btn"></div>
-          </div>
+        <div class="switch-box">
+          <div class="switch-btn"></div>
+        </div>
 
+        <div class="icon-box icon-box-moon">
           <svg
             class="icon icon-tabler icon-tabler-moon"
             width="24"
@@ -70,19 +64,86 @@
             />
           </svg>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="intro">
-        <h2 class="heading__primary">This site has a darkmode feature.</h2>
-        <p class="primary__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sint
-          perferendis, assumenda obcaecati provident neque maxime quidem nemo
-          distinctio sequi adipisci. Adipisci culpa at ipsam temporibus, vel
-          dignissimos ut dicta.
-        </p>
-      </section>
-    </main>
-    
+      </div>
+
+      <div class="card">
+        <div class="card__glass">
+          <h3 class="heading">Sign in to the darkMode</h3>
+          <p class="text">Login here using your username and password</p>
+          <form action="#" method="post" class="card__form">
+            <div class="row">
+              <label for="username" class="card__label">Your Username</label>
+              <svg
+                class="icon icon-tabler icon-tabler-mail"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <polyline points="3 7 12 13 21 7" />
+              </svg>
+
+              <input
+                type="email"
+                name="username"
+                id="username"
+                class="card__input"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="row">
+              <label for="password" class="card__label">Your Secret Key</label>
+              <svg
+                class="icon icon-tabler icon-tabler-key"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="8" cy="15" r="4" />
+                <line x1="10.85" y1="12.15" x2="19" y2="4" />
+                <line x1="18" y1="5" x2="20" y2="7" />
+                <line x1="15" y1="8" x2="17" y2="10" />
+              </svg>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="card__input"
+                placeholder="********"
+              />
+            </div>
+
+            <div class="row">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember" class="card__label">Remember me</label>
+
+              <a href="#" class="card__help--text">Forgot Password?</a>
+            </div>
+
+            <div class="row">
+              <input type="submit" value="Sign In" class="card__submit__btn" />
+            </div>
+          </form>
+
+          <p class="text--sub">
+            Don't have an account?
+            <a href="#" class="card__help--text">Create account</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
