@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dark Mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/static/css/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src='/static/js/index.js' defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="logo">darkMode</span>
+        <ul>
+          <li class="nav__list">
+            <a href="#" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="contrast">
+          <svg
+            class="icon icon-tabler icon-tabler-sun"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+            />
+          </svg>
+
+          <div class="mother-container">
+            <div class="toggle-btn"></div>
+          </div>
+
+          <svg
+            class="icon icon-tabler icon-tabler-moon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2 class="heading__primary">This site has a darkmode feature.</h2>
+        <p class="primary__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sint
+          perferendis, assumenda obcaecati provident neque maxime quidem nemo
+          distinctio sequi adipisci. Adipisci culpa at ipsam temporibus, vel
+          dignissimos ut dicta.
+        </p>
+      </section>
+    </main>
+    
+  </body>
+</html>
