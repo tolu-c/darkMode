@@ -1,0 +1,19 @@
+.icon {
+  &-box {
+    display: inline-block;
+    height: 3.2rem;
+    width: auto;
+  }
+
+  &-tabler-sun {
+    height: 100%;
+    width: 100%;
+    stroke: yellow;
+    stroke-width: 2;
+  }
+
+  &-tabler-moon {
+    height: 100%;
+    width: 100%;
+  }
+}
