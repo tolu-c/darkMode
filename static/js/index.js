@@ -1,31 +1,33 @@
-console.log("how are you");
-let motherContainer = document.querySelector(".mother-container");
-let toggleBtn = document.querySelector(".toggle-btn");
-let link = document.getElementsByTagName("link");
-let body = document.getElementsByTagName("body");
-let scriptChanged = false;
-let logo = document.querySelector(".logo");
-// link[0].href = "./static/css/main.css";
-// console.log(link[0].href);
-// console.log(motherContainer)
+let switchBtn = document.querySelector(".switch-btn");
+// let switchBox = document.querySelector(".switch-box");
+let container = document.querySelector(".container");
+let sun = document.querySelector(".icon-tabler-sun");
+let moon = document.querySelector(".icon-tabler-moon");
+let glass = document.querySelector(".card__glass");
+let heading = document.querySelector(".heading");
+let text = document.querySelector(".text");
+let label = document.querySelector(".card__label");
+let svg = document.querySelector(".icon-tabler-mail");
+let svg2 = document.querySelector(".icon-tabler-key");
+let input = document.querySelector("#username");
+let input2 = document.querySelector("#password");
+console.log(input);
+console.log(input2);
 
-const styleScript = () => {
-  link[0].href = "/static/css/main.css";
-  scriptChanged = true;
+const switchAll = () => {
+  switchBtn.classList.toggle("right");
+  document.body.classList.toggle("dark-body");
+  container.classList.toggle("dark-container");
+  sun.classList.toggle("dark-sun");
+  moon.classList.toggle("dark-moon");
+  glass.classList.toggle("dark-glass");
+  heading.classList.toggle("dark-heading");
+  text.classList.toggle("dark-text");
+  label.classList.toggle("dark-label");
+  svg.classList.toggle("dark-input-svg");
+  svg2.classList.toggle("dark-input-svg");
+  input.classList.toggle("dark-input");
+  input2.classList.toggle("dark-input");
 };
 
-const mainScript = () => {
-  link[0].href = "/static/css/style.css";
-  scriptChanged = false;
-};
-
-const toggleScript = () => {
-  toggleBtn.classList.toggle("right");
-  logo.classList.toggle("logo-dark");
-};
-
-const slideButton = () => {
-  //   body.style.backgroundColor.toggle('black')
-};
-
-motherContainer.addEventListener("click", toggleScript);
+switchBtn.addEventListener("click", switchAll);

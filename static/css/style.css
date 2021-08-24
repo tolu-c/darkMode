@@ -70,6 +70,7 @@ body {
 .icon-tabler-moon {
   height: 100%;
   width: 100%;
+  stroke: grey;
 }
 
 .card {
@@ -79,6 +80,8 @@ body {
   background-image: url("/static/images//bg-min.jpg");
   background-position: center;
   background-size: cover;
+  border-radius: 1.6rem;
+  overflow: hidden;
 }
 
 .card__glass {
@@ -110,7 +113,7 @@ body {
   width: auto;
   position: absolute;
   top: 3.5rem;
-  left: 0.5rem;
+  left: 0.4rem;
   stroke-width: 1.5;
 }
 
@@ -183,10 +186,54 @@ body {
   margin-left: 2rem;
 }
 
+.dark-body {
+  background-color: #181818;
+}
+
+.dark-container {
+  border: 1px solid #eee;
+}
+
+.dark-sun {
+  stroke: rgba(255, 255, 0, 0.534);
+  stroke-width: 1;
+}
+
+.dark-moon {
+  stroke: #eee;
+  stroke-width: 2;
+}
+
+.dark-glass {
+  background-color: rgba(17, 25, 40, 0.6);
+  border: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+.dark-heading {
+  color: #f2f2f2;
+}
+
+.dark-text {
+  color: #eee;
+}
+
+.dark-label {
+  color: #eee;
+}
+
+.dark-input {
+  background-color: #888;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.dark-input-svg {
+  stroke: #f2f2f2;
+}
+
 .container {
   width: 60%;
   margin: 7.5rem auto;
-  border: 1px solid #eee;
+  border: 1px solid #888;
 }
 
 .darkmode__box {
