@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
   height: 2rem;
   border-radius: 50%;
   background-color: #263238;
+  transition: all .3s;
 }
 
 .right {
@@ -106,6 +108,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   display: block;
+  cursor: pointer;
 }
 
 .card__label ~ svg {
@@ -121,7 +124,8 @@ body {
   display: inline-block;
   font-size: 1.6rem;
   color: #333333;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 .card__input {
@@ -171,6 +175,25 @@ body {
   box-shadow: 1px 2px 3px #888;
 }
 
+.remember__checkbox[type="checkbox"] {
+  border-radius: 0.4rem;
+}
+
+.remember__checkbox {
+  -webkit-print-color-adjust: exact;
+  appearance: none;
+  background-color: #fff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #d1d5db;
+  color-adjust: exact;
+  height: 1.125em;
+  margin-top: 0.1875em;
+  vertical-align: top;
+  width: 1.125em;
+}
+
 .link, .link:active, .link:visited {
   text-decoration: none;
   color: blue;
@@ -213,11 +236,7 @@ body {
   color: #f2f2f2;
 }
 
-.dark-text {
-  color: #eee;
-}
-
-.dark-label {
+.dark-text, .dark-remember, .dark-sub, .dark-label {
   color: #eee;
 }
 
@@ -228,6 +247,12 @@ body {
 
 .dark-input-svg {
   stroke: #f2f2f2;
+}
+
+.remember__checkbox--dark {
+  background-color: #1f2a37;
+  border: 1px solid #4b5663;
+  cursor: pointer;
 }
 
 .container {
