@@ -147,10 +147,24 @@ body {
   stroke-width: 2;
 }
 
+@media (min-width: 22.5em) {
+  .icon-tabler-sun {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
 .icon-tabler-moon {
   height: 100%;
   width: 100%;
   stroke: grey;
+}
+
+@media (min-width: 22.5em) {
+  .icon-tabler-moon {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .card {

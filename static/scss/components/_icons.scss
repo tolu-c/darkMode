@@ -14,11 +14,21 @@
     width: 100%;
     stroke: yellow;
     stroke-width: 2;
+
+    @include respond(xsm) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 
   &-tabler-moon {
     height: 100%;
     width: 100%;
     stroke: grey;
+
+    @include respond(xsm) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
