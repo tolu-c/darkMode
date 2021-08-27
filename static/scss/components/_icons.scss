@@ -3,6 +3,10 @@
     display: inline-block;
     height: 3.2rem;
     width: auto;
+
+    @include respond(xsm) {
+      height: 6.4rem;
+    }
   }
 
   &-tabler-sun {

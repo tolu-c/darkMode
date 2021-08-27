@@ -30,4 +30,9 @@
   height: 7.5rem;
   text-align: right;
   padding: 2rem 1.5rem;
+
+  @include respond(xsm) {
+    height: 10rem;
+    padding: 2rem 2rem;
+  }
 }

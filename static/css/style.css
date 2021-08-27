@@ -134,6 +134,12 @@ body {
   width: auto;
 }
 
+@media (min-width: 22.5em) {
+  .icon-box {
+    height: 6.4rem;
+  }
+}
+
 .icon-tabler-sun {
   height: 100%;
   width: 100%;
@@ -457,6 +463,13 @@ body {
   height: 7.5rem;
   text-align: right;
   padding: 2rem 1.5rem;
+}
+
+@media (min-width: 22.5em) {
+  .darkmode__box {
+    height: 10rem;
+    padding: 2rem 2rem;
+  }
 }
 
 .row {
