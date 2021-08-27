@@ -2,6 +2,27 @@
   width: 60%;
   margin: 7.5rem auto;
   border: 1px solid #888;
+  @include absolute-center;
+
+  @include respond(xsm) {
+    width: 90%;
+  }
+
+  @include respond(sm) {
+    width: 80%;
+  }
+
+  @include respond(md) {
+    width: 75%;
+  }
+
+  @include respond(lg) {
+    width: 70%;
+  }
+
+  @include respond(xlg) {
+    width: 60%;
+  }
 }
 
 .darkmode__box {

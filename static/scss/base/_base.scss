@@ -5,8 +5,23 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(xsm) {
+    font-size: 31.25%; // 5px
+  }
+  @include respond(sm) {
+    font-size: 50%; //8px
+  }
+  @include respond(md) {
+    font-size: 56.25%; // 9px
+  }
+  @include respond(lg) {
+    font-size: 62.5%; // 10px
+  }
+  @include respond(xlg) {
+    font-size: 75%; // 12px
+  }
 }
 
 body {

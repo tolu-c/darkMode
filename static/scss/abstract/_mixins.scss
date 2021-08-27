@@ -1,0 +1,44 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == xsm {
+    @media (min-width: 22.5em) {
+      //360px
+      @content;
+    }
+  }
+
+  @if $breakpoint == sm {
+    @media (min-width: 40em) {
+      //640px
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media (min-width: 48em) {
+      //768px
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (min-width: 64em) {
+      //1024px
+      @content;
+    }
+  }
+
+  //   current style
+  @if $breakpoint == xlg {
+    @media (min-width: 80em) {
+      // 1280px
+      @content;
+    }
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

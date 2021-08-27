@@ -2,6 +2,11 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: #212121;
+
+  @include respond(xsm) {
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
 }
 
 .text {
@@ -9,9 +14,19 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.75);
 
+  @include respond(xsm) {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   &--sub {
     font-size: 1.4rem;
     font-weight: 300;
     color: #212121;
+
+    @include respond(xsm) {
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
 }

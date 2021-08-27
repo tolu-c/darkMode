@@ -5,8 +5,37 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+@media (min-width: 22.5em) {
+  html {
+    font-size: 31.25%;
+  }
+}
+
+@media (min-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (min-width: 80em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -21,16 +50,37 @@ body {
   color: #212121;
 }
 
+@media (min-width: 22.5em) {
+  .heading {
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+}
+
 .text {
   font-size: 1.6rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.75);
 }
 
+@media (min-width: 22.5em) {
+  .text {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
 .text--sub {
   font-size: 1.4rem;
   font-weight: 300;
   color: #212121;
+}
+
+@media (min-width: 22.5em) {
+  .text--sub {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
 
 .switch-box {
@@ -79,11 +129,20 @@ body {
   width: 90%;
   margin: 3rem auto;
   height: 50rem;
-  background-image: url("/static/images//bg-min.jpg");
+  background-image: url("/static/images/dark mountain.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 1.6rem;
   overflow: hidden;
+}
+
+@media (min-width: 22.5em) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    height: 60rem;
+  }
 }
 
 .card__glass {
@@ -93,15 +152,30 @@ body {
   height: 75%;
   border-radius: 1.6rem;
   border: 1px solid rgba(209, 213, 219, 0.3);
-  transform: translate(-50%, -50%);
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   position: relative;
   padding: 2.5rem;
 }
 
+@media (min-width: 22.5em) {
+  .card__glass {
+    width: 75%;
+    height: 80%;
+    border-radius: 3.2rem;
+  }
+}
+
 .card__form {
   margin-top: 1rem;
+}
+
+@media (min-width: 22.5em) {
+  .card__form {
+    margin-top: 2rem;
+  }
 }
 
 .card__label {
@@ -109,6 +183,13 @@ body {
   font-weight: 400;
   display: block;
   cursor: pointer;
+}
+
+@media (min-width: 22.5em) {
+  .card__label {
+    font-size: 2.8rem;
+    font-weight: 300;
+  }
 }
 
 .card__label ~ svg {
@@ -120,12 +201,28 @@ body {
   stroke-width: 1.5;
 }
 
+@media (min-width: 22.5em) {
+  .card__label ~ svg {
+    height: 3rem;
+    top: 4.3rem;
+    left: 1rem;
+  }
+}
+
 .card__label--checkbox {
   display: inline-block;
   font-size: 1.6rem;
   color: #333333;
   margin-left: 0.5rem;
   cursor: pointer;
+}
+
+@media (min-width: 22.5em) {
+  .card__label--checkbox {
+    font-size: 2rem;
+    margin-left: 1rem;
+    vertical-align: bottom;
+  }
 }
 
 .card__input {
@@ -135,6 +232,16 @@ body {
   border: none;
   border: 0.5px solid #888;
   border-radius: 5px;
+}
+
+@media (min-width: 22.5em) {
+  .card__input {
+    width: 90%;
+    height: 4rem;
+    padding-left: 5rem;
+    vertical-align: top;
+    border-radius: 10rem;
+  }
 }
 
 .card__input:focus {
@@ -153,13 +260,34 @@ body {
   color: #181818;
 }
 
+@media (min-width: 22.5em) {
+  .card__input::-webkit-input-placeholder {
+    font-size: 2rem;
+  }
+}
+
 .card__help--text {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
+@media (min-width: 22.5em) {
+  .card__help--text {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
 .card__help--text--psd {
   margin-left: 23rem;
+}
+
+@media (min-width: 22.5em) {
+  .card__help--text--psd {
+    margin: 1rem 5rem 0 0;
+    font-size: 1.6rem;
+    float: right;
+  }
 }
 
 .card__submit__btn {
@@ -175,6 +303,13 @@ body {
   box-shadow: 1px 2px 3px #888;
 }
 
+@media (min-width: 22.5em) {
+  .card__submit__btn {
+    width: 90%;
+    height: 4rem;
+  }
+}
+
 .remember__checkbox[type="checkbox"] {
   border-radius: 0.4rem;
 }
@@ -188,10 +323,10 @@ body {
   background-size: contain;
   border: 1px solid #d1d5db;
   color-adjust: exact;
-  height: 1.125em;
+  height: 2.5rem;
   margin-top: 0.1875em;
   vertical-align: top;
-  width: 1.125em;
+  width: 2.5rem;
 }
 
 .link, .link:active, .link:visited {
@@ -259,6 +394,40 @@ body {
   width: 60%;
   margin: 7.5rem auto;
   border: 1px solid #888;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 22.5em) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 40em) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 48em) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 64em) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    width: 60%;
+  }
 }
 
 .darkmode__box {
