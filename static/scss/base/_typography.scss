@@ -7,6 +7,11 @@
     font-size: 3.2rem;
     font-weight: 300;
   }
+
+  @include respond(sm) {
+    font-size: 3rem;
+    font-weight: 400;
+  }
 }
 
 .text {
@@ -19,6 +24,11 @@
     font-weight: 500;
   }
 
+  @include respond(sm) {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
   &--sub {
     font-size: 1.4rem;
     font-weight: 300;
@@ -26,6 +36,11 @@
 
     @include respond(xsm) {
       font-size: 2rem;
+      font-weight: 400;
+    }
+
+    @include respond(sm) {
+      font-size: 1.75rem;
       font-weight: 400;
     }
   }

@@ -22,6 +22,10 @@ html {
   @include respond(xlg) {
     font-size: 75%; // 12px
   }
+
+  @include respond(vsm) {
+    font-size: 31.25%; // 5px
+  }
 }
 
 body {

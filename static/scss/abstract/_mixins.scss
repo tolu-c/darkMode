@@ -1,4 +1,11 @@
 @mixin respond($breakpoint) {
+  @if $breakpoint == vsm {
+    @media (max-width: 22.5em) {
+      // 1280px
+      @content;
+    }
+  }
+
   @if $breakpoint == xsm {
     @media (min-width: 22.5em) {
       //360px
